@@ -1,0 +1,6 @@
+funky = 1
+repeat 
+funky = funky + 1
+game:GetService("ReplicatedStorage").Remotes.DumpClicks:InvokeServer(80)
+wait(1)
+until funky > 100 --change the 100 to what ever number of clicks you want--
