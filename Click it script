@@ -1,6 +1,122 @@
-funky = 1
+
+-- Made by Morga#8635 c: 
+
+
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local UICorner = Instance.new("UICorner")
+local TextButton = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local UICorner_3 = Instance.new("UICorner")
+local Activate = Instance.new("TextLabel")
+local UICorner_4 = Instance.new("UICorner")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer.PlayerGui
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+Frame.Position = UDim2.new(0.0218642112, 0, 0.0308641978, 0)
+Frame.Size = UDim2.new(0, 210, 0, 88)
+
+Title.Name = "Title"
+Title.Parent = Frame
+Title.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+Title.Size = UDim2.new(0, 210, 0, 37)
+Title.Font = Enum.Font.SourceSans
+Title.Text = "GatoWare V2"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextSize = 45.000
+
+UICorner.Parent = Title
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(93, 93, 93)
+TextButton.Position = UDim2.new(0.052380953, 0, 0.534879804, 0)
+TextButton.Size = UDim2.new(0, 25, 0, 25)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = ""
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 14.000
+TextButton.MouseButton1Down:connect(function()
+j = 1
 repeat 
-funky = funky + 1
+j = j + 1
 game:GetService("ReplicatedStorage").Remotes.DumpClicks:InvokeServer(80)
 wait(1)
-until funky > 100 --change the 100 to the ammount of seconds u wanna run it for (it will click 80 a second) (its the max the game registers)--
+until j > 99999999999999999999999999999999999999999999999999999999999999999
+end)
+
+UICorner_2.Parent = TextButton
+
+UICorner_3.Parent = Frame
+
+Activate.Name = "Activate"
+Activate.Parent = Frame
+Activate.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+Activate.BackgroundTransparency = 0.030
+Activate.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Activate.BorderSizePixel = 3
+Activate.Position = UDim2.new(0.204898909, 0, 0.533294678, 0)
+Activate.Size = UDim2.new(0, 96, 0, 25)
+Activate.Font = Enum.Font.SourceSans
+Activate.Text = "Activate"
+Activate.TextColor3 = Color3.fromRGB(255, 255, 255)
+Activate.TextSize = 33.000
+
+
+UICorner_4.Parent = Activate
+
+-- Scripts:
+
+local function SYROASZ_fake_script() -- Frame.LocalScript 
+	print("OKTEST")
+	local script = Instance.new('LocalScript', Frame)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+	
+end
+coroutine.wrap(SYROASZ_fake_script)()
