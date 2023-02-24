@@ -1,16 +1,19 @@
 Here are updates of all the scripts
----------------------
-Click it script v1
+----------------------
+Gatoware v1
 +made it actually work (lol)
 +optimized the script
----------------------
-Click it script v2
+----------------------
+Gatoware v2
 +officially renamed has GatoWare (Gato = cat in portuguese XD )
 +added a very simple gui that will infinitly click!
 +official loadstring version loadstring(game:HttpGet('https://raw.githubusercontent.com/minorcaPT/scripts/main/Click%20it%20script'))()
---------------------
-Click it script v3
+----------------------
+Gatoware v3
 +expanded GUI
 +ON/OFF button
 -due to how the script works (its very bad) ive got the off button to work but now the timer window doesnt work
+----------------------
+Gatoware v3.1
+-removed the timer due to it just being too hard to implement
 ----------------------
