@@ -1,12 +1,8 @@
-
-
 --made by Morga#8635
-
 
 -- Instances:
 
-
-local ScreenGui = Instance.new("ScreenGui")
+local Gatoware = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
 local TextLabel = Instance.new("TextLabel")
@@ -21,18 +17,16 @@ local OFF = Instance.new("TextButton")
 local UICorner_4 = Instance.new("UICorner")
 local ON = Instance.new("TextButton")
 local UICorner_5 = Instance.new("UICorner")
-local TextBox = Instance.new("TextBox")
-local UICorner_6 = Instance.new("UICorner")
 
 --Properties:
-j = 1
 
-ScreenGui.Parent = game.Players.LocalPlayer.PlayerGui
+Gatoware.Name = "Gatoware"
+Gatoware.Parent = game.Players.LocalPlayer.PlayerGui
 
-Frame.Parent = ScreenGui
+Frame.Parent = Gatoware
 Frame.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
 Frame.Position = UDim2.new(0.216340616, 0, 0.311111122, 0)
-Frame.Size = UDim2.new(0, 156, 0, 143)
+Frame.Size = UDim2.new(0, 156, 0, 104)
 Frame.Active = true
 Frame.Draggable = true
 
@@ -43,7 +37,7 @@ TextLabel.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
 TextLabel.Position = UDim2.new(0, 0, -0.00357418461, 0)
 TextLabel.Size = UDim2.new(0, 156, 0, 50)
 TextLabel.Font = Enum.Font.SourceSans
-TextLabel.Text = "GatoWare V3"
+TextLabel.Text = "GatoWare V3.1"
 TextLabel.TextColor3 = Color3.fromRGB(63, 63, 63)
 TextLabel.TextSize = 33.000
 
@@ -53,7 +47,7 @@ onlabel.Name = "on label"
 onlabel.Parent = Frame
 onlabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 onlabel.BackgroundTransparency = 1.000
-onlabel.Position = UDim2.new(0.0123631656, 0, 0.343632877, 0)
+onlabel.Position = UDim2.new(0.0187734216, 0, 0.468632877, 0)
 onlabel.Size = UDim2.new(0, 28, 0, 24)
 onlabel.Font = Enum.Font.SourceSans
 onlabel.Text = "ON"
@@ -64,7 +58,7 @@ offlabel.Name = "off label"
 offlabel.Parent = Frame
 offlabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 offlabel.BackgroundTransparency = 1.000
-offlabel.Position = UDim2.new(0.179029837, 0, 0.343632877, 0)
+offlabel.Position = UDim2.new(0.172619581, 0, 0.468632877, 0)
 offlabel.Size = UDim2.new(0, 28, 0, 24)
 offlabel.Font = Enum.Font.SourceSans
 offlabel.Text = "OFF"
@@ -75,7 +69,7 @@ clickerlabel.Name = "clicker label"
 clickerlabel.Parent = Frame
 clickerlabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 clickerlabel.BackgroundTransparency = 1.000
-clickerlabel.Position = UDim2.new(0.403388768, 0, 0.469506949, 0)
+clickerlabel.Position = UDim2.new(0.396978498, 0, 0.642583847, 0)
 clickerlabel.Size = UDim2.new(0, 85, 0, 24)
 clickerlabel.Font = Enum.Font.SourceSans
 clickerlabel.Text = "Clicker"
@@ -86,7 +80,7 @@ Jinxswisewords.Name = "Jinx's wise words"
 Jinxswisewords.Parent = Frame
 Jinxswisewords.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Jinxswisewords.BackgroundTransparency = 1.000
-Jinxswisewords.Position = UDim2.new(0.358516991, 0, 0.294681787, 0)
+Jinxswisewords.Position = UDim2.new(0.35210672, 0, 0.410066396, 0)
 Jinxswisewords.Size = UDim2.new(0, 75, 0, 24)
 Jinxswisewords.Font = Enum.Font.SourceSans
 Jinxswisewords.Text = "I love Gatoware! - "
@@ -96,7 +90,7 @@ Jinxswisewords.TextSize = 12.000
 Jinx.Name = "Jinx"
 Jinx.Parent = Frame
 Jinx.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Jinx.Position = UDim2.new(0.841799378, 0, 0.294267446, 0)
+Jinx.Position = UDim2.new(0.835389137, 0, 0.38080591, 0)
 Jinx.Size = UDim2.new(0, 24, 0, 24)
 Jinx.Image = "http://www.roblox.com/asset/?id=7978226702"
 
@@ -105,28 +99,30 @@ UICorner_3.Parent = Jinx
 OFF.Name = "OFF"
 OFF.Parent = Frame
 OFF.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
-OFF.Position = UDim2.new(0.203276664, 0, 0.488439947, 0)
+OFF.Position = UDim2.new(0.203276664, 0, 0.694733679, 0)
 OFF.Size = UDim2.new(0, 19, 0, 19)
 OFF.Font = Enum.Font.SourceSans
 OFF.Text = ""
 OFF.TextColor3 = Color3.fromRGB(0, 0, 0)
 OFF.TextSize = 14.000
-OFF.MouseButton1Down:connect(function()
-j = a + 1
-end)
-
 
 UICorner_4.Parent = OFF
 
 ON.Name = "ON"
 ON.Parent = Frame
 ON.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
-ON.Position = UDim2.new(0.0408810377, 0, 0.488439947, 0)
+ON.Position = UDim2.new(0.0408810377, 0, 0.694733679, 0)
 ON.Size = UDim2.new(0, 19, 0, 19)
 ON.Font = Enum.Font.SourceSans
 ON.Text = ""
 ON.TextColor3 = Color3.fromRGB(0, 0, 0)
 ON.TextSize = 14.000
+
+UICorner_5.Parent = ON
+
+
+--clicky click click part (can be turned off!)
+
 function _CcCcClick(clicker)
 clicker["active"]=true
 while clicker["active"] do
@@ -151,35 +147,14 @@ end
 
 ON.MouseButton1Click:connect(onActivate)
 OFF.MouseButton1Click:connect(onDeactivate)
-UICorner_5.Parent = ON
 
-TextBox.Parent = Frame
-TextBox.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
-TextBox.Position = UDim2.new(0.0478666872, 0, 0.690840006, 0)
-TextBox.Size = UDim2.new(0, 141, 0, 37)
-TextBox.Font = Enum.Font.SourceSans
-TextBox.Text = ""
-TextBox.TextColor3 = Color3.fromRGB(63, 63, 63)
-TextBox.TextSize = 14.000
-
-UICorner_6.Parent = TextBox
-
-local seconds=0
-local textbox= game.Players.LocalPlayer.PlayerGui
-textbox.InputEnded:Connect(function(iforgotthenameofthisvariablesofuckitillusethis)
-if iforgotthenameofthisvariablesofuckitillusethis.UserInputType == Enum.UserInputType.Keyboard then
-a=tonumber(textbox.Text)
-end
-end)
+--draggable thingy
 
 
+local function GLJHN_fake_script() -- Gatoware.LocalScript 
+	local script = Instance.new('LocalScript', Gatoware)
 
--- Scripts:
 
-local function EPAI_fake_script() -- ScreenGui.LocalScript 
-	local script = Instance.new('LocalScript', ScreenGui)
-
-	--- draggable part
 	
 	
 	local UserInputService = game:GetService("UserInputService")
@@ -196,7 +171,7 @@ local function EPAI_fake_script() -- ScreenGui.LocalScript
 		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
 	end
 	
-	UserInputService.InputBegan:Connect(function(input)
+	gui.InputBegan:Connect(function(input)
 		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
 			dragging = true
 			dragStart = input.Position
@@ -210,7 +185,7 @@ local function EPAI_fake_script() -- ScreenGui.LocalScript
 		end
 	end)
 	
-	UserInputService.InputChanged:Connect(function(input)
+	gui.InputChanged:Connect(function(input)
 		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
 			dragInput = input
 		end
@@ -222,4 +197,4 @@ local function EPAI_fake_script() -- ScreenGui.LocalScript
 		end
 	end)
 end
-coroutine.wrap(EPAI_fake_script)()
+coroutine.wrap(GLJHN_fake_script)()
