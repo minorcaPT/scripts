@@ -9,3 +9,8 @@ Click it script v2
 +added a very simple gui that will infinitly click!
 +official loadstring version loadstring(game:HttpGet('https://raw.githubusercontent.com/minorcaPT/scripts/main/Click%20it%20script'))()
 --------------------
+Click it script v3
++expanded GUI
++ON/OFF button
++ timer window to increase or decrease how much time (IN SECONDS) it will run!
+----------------------
