@@ -1,83 +1,187 @@
 
--- Made by Morga#8635 c: 
 
+--made by Morga#8635
 
 
 -- Instances:
 
+
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
-local Title = Instance.new("TextLabel")
 local UICorner = Instance.new("UICorner")
-local TextButton = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
 local UICorner_2 = Instance.new("UICorner")
+local onlabel = Instance.new("TextLabel")
+local offlabel = Instance.new("TextLabel")
+local clickerlabel = Instance.new("TextLabel")
+local Jinxswisewords = Instance.new("TextLabel")
+local Jinx = Instance.new("ImageLabel")
 local UICorner_3 = Instance.new("UICorner")
-local Activate = Instance.new("TextLabel")
+local OFF = Instance.new("TextButton")
 local UICorner_4 = Instance.new("UICorner")
+local ON = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local TextBox = Instance.new("TextBox")
+local UICorner_6 = Instance.new("UICorner")
 
 --Properties:
+j = 1
 
 ScreenGui.Parent = game.Players.LocalPlayer.PlayerGui
 
 Frame.Parent = ScreenGui
-Frame.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
-Frame.Position = UDim2.new(0.0218642112, 0, 0.0308641978, 0)
-Frame.Size = UDim2.new(0, 210, 0, 88)
+Frame.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+Frame.Position = UDim2.new(0.216340616, 0, 0.311111122, 0)
+Frame.Size = UDim2.new(0, 156, 0, 143)
+Frame.Active = true
+Frame.Draggable = true
 
-Title.Name = "Title"
-Title.Parent = Frame
-Title.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
-Title.Size = UDim2.new(0, 210, 0, 37)
-Title.Font = Enum.Font.SourceSans
-Title.Text = "GatoWare V2"
-Title.TextColor3 = Color3.fromRGB(255, 255, 255)
-Title.TextSize = 45.000
+UICorner.Parent = Frame
 
-UICorner.Parent = Title
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+TextLabel.Position = UDim2.new(0, 0, -0.00357418461, 0)
+TextLabel.Size = UDim2.new(0, 156, 0, 50)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "GatoWare V3"
+TextLabel.TextColor3 = Color3.fromRGB(63, 63, 63)
+TextLabel.TextSize = 33.000
 
-TextButton.Parent = Frame
-TextButton.BackgroundColor3 = Color3.fromRGB(93, 93, 93)
-TextButton.Position = UDim2.new(0.052380953, 0, 0.534879804, 0)
-TextButton.Size = UDim2.new(0, 25, 0, 25)
-TextButton.Font = Enum.Font.SourceSans
-TextButton.Text = ""
-TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton.TextSize = 14.000
-TextButton.MouseButton1Down:connect(function()
-j = 1
-repeat 
-j = j + 1
-game:GetService("ReplicatedStorage").Remotes.DumpClicks:InvokeServer(80)
-wait(1)
-until j > 99999999999999999999999999999999999999999999999999999999999999999
+UICorner_2.Parent = TextLabel
+
+onlabel.Name = "on label"
+onlabel.Parent = Frame
+onlabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+onlabel.BackgroundTransparency = 1.000
+onlabel.Position = UDim2.new(0.0123631656, 0, 0.343632877, 0)
+onlabel.Size = UDim2.new(0, 28, 0, 24)
+onlabel.Font = Enum.Font.SourceSans
+onlabel.Text = "ON"
+onlabel.TextColor3 = Color3.fromRGB(34, 34, 34)
+onlabel.TextSize = 14.000
+
+offlabel.Name = "off label"
+offlabel.Parent = Frame
+offlabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+offlabel.BackgroundTransparency = 1.000
+offlabel.Position = UDim2.new(0.179029837, 0, 0.343632877, 0)
+offlabel.Size = UDim2.new(0, 28, 0, 24)
+offlabel.Font = Enum.Font.SourceSans
+offlabel.Text = "OFF"
+offlabel.TextColor3 = Color3.fromRGB(34, 34, 34)
+offlabel.TextSize = 14.000
+
+clickerlabel.Name = "clicker label"
+clickerlabel.Parent = Frame
+clickerlabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+clickerlabel.BackgroundTransparency = 1.000
+clickerlabel.Position = UDim2.new(0.403388768, 0, 0.469506949, 0)
+clickerlabel.Size = UDim2.new(0, 85, 0, 24)
+clickerlabel.Font = Enum.Font.SourceSans
+clickerlabel.Text = "Clicker"
+clickerlabel.TextColor3 = Color3.fromRGB(34, 34, 34)
+clickerlabel.TextSize = 41.000
+
+Jinxswisewords.Name = "Jinx's wise words"
+Jinxswisewords.Parent = Frame
+Jinxswisewords.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Jinxswisewords.BackgroundTransparency = 1.000
+Jinxswisewords.Position = UDim2.new(0.358516991, 0, 0.294681787, 0)
+Jinxswisewords.Size = UDim2.new(0, 75, 0, 24)
+Jinxswisewords.Font = Enum.Font.SourceSans
+Jinxswisewords.Text = "I love Gatoware! - "
+Jinxswisewords.TextColor3 = Color3.fromRGB(34, 34, 34)
+Jinxswisewords.TextSize = 12.000
+
+Jinx.Name = "Jinx"
+Jinx.Parent = Frame
+Jinx.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Jinx.Position = UDim2.new(0.841799378, 0, 0.294267446, 0)
+Jinx.Size = UDim2.new(0, 24, 0, 24)
+Jinx.Image = "http://www.roblox.com/asset/?id=7978226702"
+
+UICorner_3.Parent = Jinx
+
+OFF.Name = "OFF"
+OFF.Parent = Frame
+OFF.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+OFF.Position = UDim2.new(0.203276664, 0, 0.488439947, 0)
+OFF.Size = UDim2.new(0, 19, 0, 19)
+OFF.Font = Enum.Font.SourceSans
+OFF.Text = ""
+OFF.TextColor3 = Color3.fromRGB(0, 0, 0)
+OFF.TextSize = 14.000
+OFF.MouseButton1Down:connect(function()
+j = a + 1
 end)
 
-UICorner_2.Parent = TextButton
 
-UICorner_3.Parent = Frame
+UICorner_4.Parent = OFF
 
-Activate.Name = "Activate"
-Activate.Parent = Frame
-Activate.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
-Activate.BackgroundTransparency = 0.030
-Activate.BorderColor3 = Color3.fromRGB(27, 42, 53)
-Activate.BorderSizePixel = 3
-Activate.Position = UDim2.new(0.204898909, 0, 0.533294678, 0)
-Activate.Size = UDim2.new(0, 96, 0, 25)
-Activate.Font = Enum.Font.SourceSans
-Activate.Text = "Activate"
-Activate.TextColor3 = Color3.fromRGB(255, 255, 255)
-Activate.TextSize = 33.000
+ON.Name = "ON"
+ON.Parent = Frame
+ON.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+ON.Position = UDim2.new(0.0408810377, 0, 0.488439947, 0)
+ON.Size = UDim2.new(0, 19, 0, 19)
+ON.Font = Enum.Font.SourceSans
+ON.Text = ""
+ON.TextColor3 = Color3.fromRGB(0, 0, 0)
+ON.TextSize = 14.000
+function _CcCcClick(clicker)
+clicker["active"]=true
+while clicker["active"] do
+        game:GetService("ReplicatedStorage").Remotes.DumpClicks:InvokeServer(80)
+        wait(1)
+end
+clicker=nil
+end
+clickersactivated={}
+function onActivate()
+local clicker={}
+table.insert(clickersactivated,clicker)
+clicker["script"]=coroutine.create(function() _CcCcClick(clicker) end)
+clicker["active"]=false
+coroutine.resume(clicker["script"])
+end
+function onDeactivate()
+for i,clicker in pairs(clickersactivated) do
+clicker["active"]=false
+end
+end
+
+ON.MouseButton1Click:connect(onActivate)
+OFF.MouseButton1Click:connect(onDeactivate)
+UICorner_5.Parent = ON
+
+TextBox.Parent = Frame
+TextBox.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+TextBox.Position = UDim2.new(0.0478666872, 0, 0.690840006, 0)
+TextBox.Size = UDim2.new(0, 141, 0, 37)
+TextBox.Font = Enum.Font.SourceSans
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(63, 63, 63)
+TextBox.TextSize = 14.000
+
+UICorner_6.Parent = TextBox
+
+local seconds=0
+local textbox= game.Players.LocalPlayer.PlayerGui
+textbox.InputEnded:Connect(function(iforgotthenameofthisvariablesofuckitillusethis)
+if iforgotthenameofthisvariablesofuckitillusethis.UserInputType == Enum.UserInputType.Keyboard then
+a=tonumber(textbox.Text)
+end
+end)
 
 
-UICorner_4.Parent = Activate
 
 -- Scripts:
 
-local function SYROASZ_fake_script() -- Frame.LocalScript 
-	print("OKTEST")
-	local script = Instance.new('LocalScript', Frame)
+local function EPAI_fake_script() -- ScreenGui.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui)
 
+	--- draggable part
+	
+	
 	local UserInputService = game:GetService("UserInputService")
 	
 	local gui = script.Parent
@@ -92,7 +196,7 @@ local function SYROASZ_fake_script() -- Frame.LocalScript
 		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
 	end
 	
-	gui.InputBegan:Connect(function(input)
+	UserInputService.InputBegan:Connect(function(input)
 		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
 			dragging = true
 			dragStart = input.Position
@@ -106,7 +210,7 @@ local function SYROASZ_fake_script() -- Frame.LocalScript
 		end
 	end)
 	
-	gui.InputChanged:Connect(function(input)
+	UserInputService.InputChanged:Connect(function(input)
 		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
 			dragInput = input
 		end
@@ -117,6 +221,5 @@ local function SYROASZ_fake_script() -- Frame.LocalScript
 			update(input)
 		end
 	end)
-	
 end
-coroutine.wrap(SYROASZ_fake_script)()
+coroutine.wrap(EPAI_fake_script)()
