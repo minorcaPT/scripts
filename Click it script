@@ -130,7 +130,7 @@ ON.TextSize = 14.000
 function _CcCcClick(clicker)
 clicker["active"]=true
 while clicker["active"] do
-        game:GetService("ReplicatedStorage").Remotes.DumpClicks:InvokeServer(80)
+        game:GetService("ReplicatedStorage").Remotes.DumpClicks:InvokeServer(165)
         wait(1)
 end
 clicker=nil
