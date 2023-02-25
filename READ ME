@@ -7,7 +7,7 @@ Gatoware v1
 Gatoware v2
 +officially renamed has GatoWare (Gato = cat in portuguese XD )
 +added a very simple gui that will infinitly click!
-+official loadstring version loadstring(game:HttpGet('https://raw.githubusercontent.com/minorcaPT/scripts/main/Click%20it%20script'))()
++official loadstring version loadstring(game:HttpGet('https://raw.githubusercontent.com/minorcaPT/scripts/main/Gatoware%20v3.1'))()
 ----------------------
 Gatoware v3
 +expanded GUI
