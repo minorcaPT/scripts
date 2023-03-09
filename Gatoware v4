@@ -1,0 +1,302 @@
+--made by Morga#8635
+
+
+-- Instances:
+
+local Gatoware = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Frame3 = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local Frame2 = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local ImageLabel = Instance.new("ImageLabel")
+local UICorner_4 = Instance.new("UICorner")
+local clicker = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local credits = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local TAB1 = Instance.new("Frame")
+local UICorner_7 = Instance.new("UICorner")
+local clickerlabel = Instance.new("TextLabel")
+local Frame4 = Instance.new("Frame")
+local UICorner_8 = Instance.new("UICorner")
+local ON = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local OFF = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local onlabel = Instance.new("TextLabel")
+local offlabel = Instance.new("TextLabel")
+local TAB2 = Instance.new("Frame")
+local text = Instance.new("TextLabel")
+
+
+--Properties:
+
+Gatoware.Name = "Gatoware"
+Gatoware.Parent = game.Players.LocalPlayer.PlayerGui
+
+Frame.Parent = Gatoware
+Frame.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+Frame.Position = UDim2.new(0.300613463, 0, 0.249382704, 0)
+Frame.Size = UDim2.new(0, 334, 0, 338)
+
+UICorner.Parent = Frame
+
+Frame3.Name = "Frame 3"
+Frame3.Parent = Frame
+Frame3.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+Frame3.Position = UDim2.new(0.00121229712, 0, -0.00209659385, 0)
+Frame3.Size = UDim2.new(0, 333, 0, 79)
+
+UICorner_2.Parent = Frame3
+
+Frame2.Name = "Frame 2"
+Frame2.Parent = Frame
+Frame2.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+Frame2.Position = UDim2.new(0, 0, 0.0857988149, 0)
+Frame2.Size = UDim2.new(0, 79, 0, 309)
+
+UICorner_3.Parent = Frame2
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(63, 63, 63)
+TextLabel.Position = UDim2.new(0.236526951, 0, 0.035502959, 0)
+TextLabel.Size = UDim2.new(0, 239, 0, 50)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Gatoware v4"
+TextLabel.TextColor3 = Color3.fromRGB(63, 63, 63)
+TextLabel.TextSize = 52.000
+
+ImageLabel.Parent = Frame
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.Position = UDim2.new(0.02123731, 0, 0.0157206617, 0)
+ImageLabel.Size = UDim2.new(0, 63, 0, 63)
+ImageLabel.Image = "http://www.roblox.com/asset/?id=7978226702"
+
+UICorner_4.Parent = ImageLabel
+
+clicker.Name = "clicker"
+clicker.Parent = Frame
+clicker.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+clicker.Position = UDim2.new(0.02123731, 0, 0.231083348, 0)
+clicker.Size = UDim2.new(0, 62, 0, 31)
+clicker.Font = Enum.Font.SourceSans
+clicker.Text = "Clicker"
+clicker.TextColor3 = Color3.fromRGB(34, 34, 34)
+clicker.TextSize = 22.000
+clicker.MouseButton1Down:connect(function()
+  TAB1.Visible = true
+  TAB2.Visible = false
+end)
+
+UICorner_5.Parent = clicker
+
+credits.Name = "credits"
+credits.Parent = Frame
+credits.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+credits.Position = UDim2.new(0.02123731, 0, 0.349426538, 0)
+credits.Size = UDim2.new(0, 62, 0, 31)
+credits.Font = Enum.Font.SourceSans
+credits.Text = "Credits"
+credits.TextColor3 = Color3.fromRGB(34, 34, 34)
+credits.TextSize = 22.000
+credits.MouseButton1Down:connect(function()
+  TAB1.Visible = false
+  TAB2.Visible = true
+end)
+
+UICorner_6.Parent = credits
+
+TAB1.Name = "TAB1"
+TAB1.Parent = Frame
+TAB1.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+TAB1.Position = UDim2.new(0.28742516, 0, 0.295857996, 0)
+TAB1.Size = UDim2.new(0, 222, 0, 66)
+TAB1.Visible = false
+
+UICorner_7.Parent = TAB1
+
+clickerlabel.Name = "clicker label"
+clickerlabel.Parent = TAB1
+clickerlabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+clickerlabel.BackgroundTransparency = 1.000
+clickerlabel.Position = UDim2.new(0.427927911, 0, 0.121212125, 0)
+clickerlabel.Size = UDim2.new(0, 120, 0, 50)
+clickerlabel.Font = Enum.Font.SourceSans
+clickerlabel.Text = "Clicker"
+clickerlabel.TextColor3 = Color3.fromRGB(63, 63, 63)
+clickerlabel.TextSize = 49.000
+
+Frame4.Name = "Frame 4"
+Frame4.Parent = TAB1
+Frame4.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+Frame4.Position = UDim2.new(0.0855855867, 0, 0.289487451, 0)
+Frame4.Size = UDim2.new(0, 68, 0, 30)
+
+UICorner_8.Parent = Frame4
+
+ON.Name = "ON"
+ON.Parent = Frame4
+ON.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+ON.Position = UDim2.new(0.132352948, 0, 0.166666672, 0)
+ON.Size = UDim2.new(0, 19, 0, 19)
+ON.Font = Enum.Font.SourceSans
+ON.Text = ""
+ON.TextColor3 = Color3.fromRGB(0, 0, 0)
+ON.TextSize = 14.000
+
+UICorner_9.Parent = ON
+
+OFF.Name = "OFF"
+OFF.Parent = Frame4
+OFF.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+OFF.Position = UDim2.new(0.573529422, 0, 0.166666672, 0)
+OFF.Size = UDim2.new(0, 19, 0, 19)
+OFF.Font = Enum.Font.SourceSans
+OFF.Text = ""
+OFF.TextColor3 = Color3.fromRGB(0, 0, 0)
+OFF.TextSize = 14.000
+
+UICorner_10.Parent = OFF
+
+onlabel.Name = "on label"
+onlabel.Parent = Frame4
+onlabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+onlabel.BackgroundTransparency = 1.000
+onlabel.Position = UDim2.new(-0.0441176482, 0, -0.633333325, 0)
+onlabel.Size = UDim2.new(0, 42, 0, 24)
+onlabel.Font = Enum.Font.SourceSans
+onlabel.Text = "ON"
+onlabel.TextColor3 = Color3.fromRGB(63, 63, 63)
+onlabel.TextSize = 14.000
+
+offlabel.Name = "off label"
+offlabel.Parent = Frame4
+offlabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+offlabel.BackgroundTransparency = 1.000
+offlabel.Position = UDim2.new(0.397058815, 0, -0.633333325, 0)
+offlabel.Size = UDim2.new(0, 42, 0, 24)
+offlabel.Font = Enum.Font.SourceSans
+offlabel.Text = "OFF"
+offlabel.TextColor3 = Color3.fromRGB(63, 63, 63)
+offlabel.TextSize = 14.000
+
+TAB2.Name = "TAB2"
+TAB2.Parent = Frame
+TAB2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TAB2.BackgroundTransparency = 1.000
+TAB2.Position = UDim2.new(0.020958066, 0, -0.0295857787, 0)
+TAB2.Size = UDim2.new(0, 103, 0, 112)
+
+text.Name = "text"
+text.Parent = TAB2
+text.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+text.BackgroundTransparency = 1.000
+text.Position = UDim2.new(0.883413136, 0, 0.889027834, 0)
+text.Size = UDim2.new(0, 220, 0, 45)
+text.Font = Enum.Font.SourceSans
+text.Text = "Made by Morga#8635"
+text.TextColor3 = Color3.fromRGB(34, 34, 34)
+text.TextSize = 30.000
+
+-- Scripts:
+
+local function PVNKGF_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	--- draggable part
+	
+	
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(PVNKGF_fake_script)()
+
+
+
+local key = game:GetService("UserInputService")
+
+key.InputBegan:Connect(function(input)
+	if input.KeyCode == Enum.KeyCode.RightShift then
+		game.LocalPlayer.PlayerGui.Gatoware.Frame.Visible = false
+	end
+end)
+key.InputBegan:Connect(function(input)
+	if input.KeyCode == Enum.KeyCode.RightControl then
+		game.LocalPlayer.PlayerGui.Gatoware.Frame.Visible = true
+	end
+end)
+
+function _CcCcClick(clicker)
+clicker["active"]=true
+while clicker["active"] do
+        game:GetService("ReplicatedStorage").Remotes.DumpClicks:InvokeServer(145)
+        wait(1)
+end
+clicker=nil
+end
+clickersactivated={}
+function onActivate()
+local clicker={}
+table.insert(clickersactivated,clicker)
+clicker["script"]=coroutine.create(function() _CcCcClick(clicker) end)
+clicker["active"]=false
+coroutine.resume(clicker["script"])
+end
+function onDeactivate()
+for i,clicker in pairs(clickersactivated) do
+clicker["active"]=false
+end
+end
+
+ON.MouseButton1Click:connect(onActivate)
+OFF.MouseButton1Click:connect(onDeactivate)
+
+local key = game:GetService("UserInputService")
+
+key.InputBegan:Connect(function(input)
+	if input.KeyCode == Enum.KeyCode.Space then
+		print("test")
+	end
+end)
