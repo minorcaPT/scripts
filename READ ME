@@ -5,9 +5,9 @@ Gatoware v1
 +optimized the script
 ----------------------
 Gatoware v2
-+officially renamed has GatoWare (Gato = cat in portuguese XD )
++officially renamed has GatoWare
 +added a very simple gui that will infinitly click!
-+official loadstring version loadstring(game:HttpGet('https://raw.githubusercontent.com/minorcaPT/scripts/main/Gatoware%20v3.1'))()
++official loadstring version loadstring(game:HttpGet('https://raw.githubusercontent.com/minorcaPT/scripts/4eb09245195e7b848a3c59c181de45d826b5a400/Gatoware%20v4'))()
 ----------------------
 Gatoware v3
 +expanded GUI
@@ -20,5 +20,6 @@ Gatoware v3.1
 Gatoware v4
 +revamped GUI!!!
 +Tabs!
++ official discord! https://discord.gg/Wnby8FThEn
 Note: i plan to fully optimize it
 ----------------------
