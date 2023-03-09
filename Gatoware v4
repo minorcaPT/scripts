@@ -1,5 +1,5 @@
 --made by Morga#8635
-
+-- right shift to make the GUI dissapear and right control to appear 
 
 -- Instances:
 
@@ -88,7 +88,7 @@ clicker.Font = Enum.Font.SourceSans
 clicker.Text = "Clicker"
 clicker.TextColor3 = Color3.fromRGB(34, 34, 34)
 clicker.TextSize = 22.000
-clicker.MouseButton1Down:connect(function()
+clicker.MouseButton1Down:connect(function()  --tab mechanism
   TAB1.Visible = true
   TAB2.Visible = false
 end)
@@ -104,7 +104,7 @@ credits.Font = Enum.Font.SourceSans
 credits.Text = "Credits"
 credits.TextColor3 = Color3.fromRGB(34, 34, 34)
 credits.TextSize = 22.000
-credits.MouseButton1Down:connect(function()
+credits.MouseButton1Down:connect(function()  --tab mechanism
   TAB1.Visible = false
   TAB2.Visible = true
 end)
@@ -203,12 +203,12 @@ text.Text = "Made by Morga#8635"
 text.TextColor3 = Color3.fromRGB(34, 34, 34)
 text.TextSize = 30.000
 
--- Scripts:
+-- draggable script
 
 local function PVNKGF_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
-	--- draggable part
+	
 	
 	
 	local UserInputService = game:GetService("UserInputService")
@@ -255,23 +255,14 @@ coroutine.wrap(PVNKGF_fake_script)()
 
 
 
-local key = game:GetService("UserInputService")
 
-key.InputBegan:Connect(function(input)
-	if input.KeyCode == Enum.KeyCode.RightShift then
-		game.LocalPlayer.PlayerGui.Gatoware.Frame.Visible = false
-	end
-end)
-key.InputBegan:Connect(function(input)
-	if input.KeyCode == Enum.KeyCode.RightControl then
-		game.LocalPlayer.PlayerGui.Gatoware.Frame.Visible = true
-	end
-end)
+
+--on and off mechanism
 
 function _CcCcClick(clicker)
 clicker["active"]=true
 while clicker["active"] do
-        game:GetService("ReplicatedStorage").Remotes.DumpClicks:InvokeServer(145)
+        game:GetService("ReplicatedStorage").Remotes.DumpClicks:InvokeServer(145)  --remoteevent that clicks 
         wait(1)
 end
 clicker=nil
@@ -293,10 +284,18 @@ end
 ON.MouseButton1Click:connect(onActivate)
 OFF.MouseButton1Click:connect(onDeactivate)
 
+-- open and close mechanism
+
 local key = game:GetService("UserInputService")
 
 key.InputBegan:Connect(function(input)
-	if input.KeyCode == Enum.KeyCode.Space then
-		print("test")
+	if input.KeyCode == Enum.KeyCode.RightShift then
+	   Frame.Visible = false
+	end
+end)
+
+key.InputBegan:Connect(function(input)
+	if input.KeyCode == Enum.KeyCode.RightControl then
+	   Frame.Visible = true
 	end
 end)
